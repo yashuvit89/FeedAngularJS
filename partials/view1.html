@@ -1,0 +1,25 @@
+<div>
+        <header>
+            <h3>Feed View</h3>
+        </header>
+        <div class="feedLink">
+            <ul>
+                <li id="feed1"><a href="#/view2/1">Feed1</a></li>
+                <li id="feed2"><a href="#/view2/2">Feed2</a></li>
+                <li id="feed3"><a href="#/view2/3">Feed3</a></li>
+                <li id="feed4"><a href="#/view2/4">Feed4</a></li>
+            </ul>
+        </div>
+        <div ng-repeat="feed in feeds">
+                <ul>
+                	<div><b>{{feed.heading}}</b></div>
+                	<div>{{feed.content}}</div>
+                </ul>    
+        </div>
+        <div>
+        	<button id="prevButton" data-ng-click="prevFeed()"><</button>
+            {{page/page}}
+        	<button id="nextButton" ng-click="nextFeed()">></button>
+        </div> 
+</div>
+    
